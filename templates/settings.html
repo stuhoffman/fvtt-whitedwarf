@@ -1,0 +1,53 @@
+<form onsubmit="event.preventDefault();" class="{{classes}}" autocomplete="off">
+	<nav class="sheet-tabs tabs">
+		<a class='item' data-tab='tab1'>{{localize 'WHITEDWARF.Settings.Tab1.tabLabel'}}</a>
+		<a class='item' data-tab='tab2'>{{localize 'WHITEDWARF.Settings.Tab2.tabLabel'}}</a>
+		
+	</nav>	
+
+
+  {{!-- PC OPTIONS --}}
+  
+
+  <section class='tab' data-tab='tab1'>
+    <h2>{{localize 'WHITEDWARF.Settings.tab1.header'}}</h2>
+    <article class="setting">
+      <input type="checkbox" data-dtype='boolean' name='tab1Disabled' id='tab1Disabled' {{checked settings.journalTabDisabled.value}}>
+      <div class="description">
+        <label for="tab1Disabled">{{localize 'WHITEDWARF.Settings.tab1.name'}}</label>
+        <p class="notes">{{localize 'WHITEDWARF.Settings.tab1.hint'}}</p>
+      </div>
+    </article>
+	</section>
+
+  
+  {{!-- NPC/VEHICLE OPTIONS --}}
+  
+
+  <section class='tab' data-tab='tab2'>
+    <h2>{{localize 'WHITEDWARF.Settings.tab2.header'}}</h2>
+
+    <article class="setting gm-only">
+      <input type="checkbox" data-dtype='boolean' name='tab2Enabled' id='tab2Enabled' {{checked settings.tab2Enabled.value}}>
+      <div class="description">
+        <label for="tab2Enabled">{{localize 'WHITEDWARF.Settings.tab2.name'}}</label>
+        <p class="notes">{{localize 'WHITEDWARF.Settings.tab2.hint'}}</p>
+      </div>
+    </article>
+    
+	</section>
+  
+
+  
+  {{!-- INFO --}}
+
+  <section class='tab' data-tab='info'>
+    <h2>{{localize 'WHITEDWARF.Settings.TabInfo.header'}}</h2>
+  </section>
+  
+  <footer class="sheet-footer flexrow">
+    <button type="submit" name="submit">
+      <i class="fas fa-save"></i>{{localize 'Save Changes'}}
+    </button>
+  </footer>
+</form>
