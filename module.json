@@ -12,7 +12,7 @@
         "./scripts/whitedwarf.js"
     ],
     "styles": [
-        
+        "./css/main.css"
     ],
     "languages": [
         {
