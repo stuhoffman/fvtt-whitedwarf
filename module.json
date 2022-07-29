@@ -2,7 +2,7 @@
     "name": "whitedwarf",
     "title": "White Dwarf Module",
     "description": "Its a test module that might change a color or something",
-    "manifest": "https://github.com/stuhoffman/fvtt-whitedwarf\module.json",
+    "manifest": "https://github.com/stuhoffman/fvtt-whitedwarf/module.json",
     "version": "0.0.1",
     "author": "thewhitedwarf",
     "minimumCoreVersion": "0.8.3",
@@ -22,6 +22,6 @@
         }
     ],
     "url": "https://github.com/stuhoffman/fvtt-whitedwarf",
-    "manifest": "https://github.com/stuhoffman/fvtt-whitedwarf\module.json",
-    "download": "https://github.com/stuhoffman/fvtt-whitedwarf\module.zip"
+    "manifest": "https://github.com/stuhoffman/fvtt-whitedwarf/module.json",
+    "download": "https://github.com/stuhoffman/fvtt-whitedwarf/module.zip"
 }
